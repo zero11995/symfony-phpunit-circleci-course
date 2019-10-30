@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6a379d8-595c-4587-b5ac-4c4a9472b36d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Factory/DinosaurFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Factory/DinosaurFactory.php" afterDir="false" />
@@ -112,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572402491714</updated>
       <workItem from="1572402493019" duration="871000" />
-      <workItem from="1572407477060" duration="10011000" />
+      <workItem from="1572407477060" duration="12143000" />
     </task>
     <servers />
   </component>
