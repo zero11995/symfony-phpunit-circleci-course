@@ -17,4 +17,8 @@ class DinosaurFactory
         $dinosaur->setLength($length);
         return $dinosaur;
     }
+
+    public function growFromSpecification(string $specification): Dinosaur
+    {
+    }
 }
