@@ -72,6 +72,7 @@ class DinosaurFactoryTest extends TestCase
 
     /**
      * @dataProvider getHugeDinosaurSpecTests
+     * @param string $specification
      */
     public function testItGrowsAHugeDinosaur(string $specification)
     {
