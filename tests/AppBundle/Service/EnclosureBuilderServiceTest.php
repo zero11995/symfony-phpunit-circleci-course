@@ -20,7 +20,6 @@ class EnclosureBuilderServiceTest extends TestCase
             ->method('flush');
 
         $dinoFactory = $this->createMock(DinosaurFactory::class);
-
         $dinoFactory->expects($this->exactly(2))
             ->method('growFromSpecification')
             ->with($this->isType('string'));
