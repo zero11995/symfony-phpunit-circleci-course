@@ -95,6 +95,10 @@ class Enclosure
         return $this->id;
     }
 
+    public function getDinosaurCount(): int
+    {
+        return $this->dinosaurs->count();
+    }
 
 
 
