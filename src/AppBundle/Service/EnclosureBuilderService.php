@@ -36,8 +36,10 @@ class EnclosureBuilderService
         $enclosure = new Enclosure();
 
         $this->addSecuritySystems($numberOfSecuritySystems, $enclosure);
+        //dump($this);die;
 
         $this->addDinosaurs($numberOfDinosaurs, $enclosure);
+
 
         $this->entityManager->persist($enclosure);
         $this->entityManager->flush();

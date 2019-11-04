@@ -43,4 +43,39 @@ class Security
     {
         return $this->isActive;
     }
+
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @return Enclosure
+     */
+    public function getEnclosure()
+    {
+        return $this->enclosure;
+    }
+
+    /**
+     * @param Enclosure $enclosure
+     */
+    public function setEnclosure(Enclosure $enclosure)
+    {
+        $this->enclosure = $enclosure;
+    }
+
+
 }

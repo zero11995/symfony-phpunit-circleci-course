@@ -15,6 +15,13 @@ class Dinosaur
     const HUGE=30;
 
     /**
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\Column(type="integer")
+     */
+    private $id;
+
+    /**
      * @ORM\Column(type="integer")
      */
     private $length = 0;
@@ -87,9 +94,28 @@ class Dinosaur
         );
     }
 
-    public function isCarnivorous(): bool
+    public function isCarnivorous()
     {
         return $this->isCarnivorous;
     }
+
+
+
+    /**
+     * @return Enclosure
+     */
+    public function getEnclosure()
+    {
+        return $this->enclosure;
+    }
+
+    /**
+     * @param Enclosure $enclosure
+     */
+    public function setEnclosure(Enclosure $enclosure)
+    {
+        $this->enclosure = $enclosure;
+    }
+
 
 }

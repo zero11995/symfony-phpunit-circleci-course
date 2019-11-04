@@ -10,13 +10,19 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="enclosure")
+ * @ORM\Table(name="enclosures")
  */
 class Enclosure
 {
     /**
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\Column(type="integer")
+     */
+    private $id;
+
+    /**
      * @var Collection
-     * @ORM\Column(type="string")
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Dinosaur", mappedBy="enclosure", cascade={"persist"})
      */
     private $dinosaurs;
@@ -53,6 +59,7 @@ class Enclosure
         }
 
         $this->dinosaurs[] = $dinosaur;
+        $dinosaur->setEnclosure($this);
     }
 
     public function addSecurity(Security $security)
@@ -79,5 +86,17 @@ class Enclosure
         return count($this->dinosaurs) === 0
             || $this->dinosaurs->first()->isCarnivorous() === $dinosaur->isCarnivorous();
     }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+
+
+
 
 }
