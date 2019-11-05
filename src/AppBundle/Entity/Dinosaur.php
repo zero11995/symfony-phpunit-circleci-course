@@ -27,14 +27,6 @@ class Dinosaur
     private $length = 0;
 
     /**
-     * @return int
-     */
-    public function getLength(): int
-    {
-        return $this->length;
-    }
-
-    /**
      * @var string
      * @ORM\Column(type="string")
      */
@@ -59,6 +51,13 @@ class Dinosaur
         $this->isCarnivorous = $isCarnivorous;
     }
 
+    /**
+     * @return int
+     */
+    public function getLength(): int
+    {
+        return $this->length;
+    }
 
     /**
      * @param int $length
@@ -98,8 +97,6 @@ class Dinosaur
     {
         return $this->isCarnivorous;
     }
-
-
 
     /**
      * @return Enclosure
