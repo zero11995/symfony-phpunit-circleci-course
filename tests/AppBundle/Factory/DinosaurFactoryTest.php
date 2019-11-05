@@ -19,7 +19,7 @@ class DinosaurFactoryTest extends TestCase
      */
     private $lengthDeterminator;
 
-    public function setUp()
+    protected function setUp():void
     {
         $this->lengthDeterminator = $this->createMock(DinosaurLengthDeterminator::class);
         $this->factory = new DinosaurFactory($this->lengthDeterminator);

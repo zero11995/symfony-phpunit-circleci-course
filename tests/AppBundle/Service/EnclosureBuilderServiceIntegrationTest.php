@@ -14,7 +14,7 @@ use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 class EnclosureBuilderServiceIntegrationTest extends KernelTestCase
 {
 
-    public function setUp()
+    protected function setUp():void
     {
         self::bootKernel();
 
