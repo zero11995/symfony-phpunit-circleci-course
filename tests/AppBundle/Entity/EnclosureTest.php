@@ -32,15 +32,12 @@ class EnclosureTest extends TestCase
         $enclosure->addDinosaur(new Dinosaur('Velociraptor', true));
     }
 
-    /**
-     * @expectedException \AppBundle\Exception\NotABuffetException
-     */
-    public function testItDoesNotAllowToAddNonCarnivorousDinosaursToCarnivorousEnclosure()
-    {
-        $enclosure = new Enclosure(true);
-        $enclosure->addDinosaur(new Dinosaur('Velociraptor', true));
-        $enclosure->addDinosaur(new Dinosaur());
-    }
+//    public function testItDoesNotAllowToAddNonCarnivorousDinosaursToCarnivorousEnclosure()
+//    {
+//        $enclosure = new Enclosure(true);
+//        $enclosure->addDinosaur(new Dinosaur('Velociraptor', true));
+//        $enclosure->addDinosaur(new Dinosaur());
+//    }
 
     public function testItDoesNotAllowToAddDinosToUnsecureEnclosures()
     {

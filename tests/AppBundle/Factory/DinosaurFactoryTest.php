@@ -30,7 +30,7 @@ class DinosaurFactoryTest extends TestCase
         //$factory = new DinosaurFactory();
         $dinosaur = $this->factory->growVelociraptor(5);
         $this->assertInstanceOf(Dinosaur::class, $dinosaur);
-        $this->assertInternalType('string', $dinosaur->getGenus());
+        $this->assertIsString($dinosaur->getGenus());
         $this->assertSame('Velociraptor', $dinosaur->getGenus());
         $this->assertSame(5, $dinosaur->getLength());
     }

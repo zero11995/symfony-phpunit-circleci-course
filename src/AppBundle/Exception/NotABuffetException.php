@@ -4,5 +4,5 @@ namespace AppBundle\Exception;
 
 class NotABuffetException extends \Exception
 {
-    protected $message="dont mix up";
+    //protected $message="dont mix up";
 }
